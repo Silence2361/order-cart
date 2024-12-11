@@ -11,7 +11,7 @@ import {
   IUser,
 } from '../database/users/users.interface';
 import { UsersRepository } from '../database/users/users.repository';
-import * as bcrypt from 'bcryptjs';
+import * as bcrypt from 'bcrypt';
 
 @Injectable()
 export class UsersService {
