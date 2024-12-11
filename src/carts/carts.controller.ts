@@ -7,15 +7,18 @@ import {
   ParseIntPipe,
   Post,
   Put,
+  UseGuards,
 } from '@nestjs/common';
-import { ICart } from 'src/database/carts/carts.interface';
+import { ICart } from '../database/carts/carts.interface';
 import { CartService } from './carts.service';
 import { CreateCartResponseDto } from './dto/create-cart-response.dto';
 import { CreateCartDto } from './dto/create-cart.dto';
 import { UpdateCartDto } from './dto/update-cart.dto';
 import { FindCartListResponseDto } from './dto/find-cart-list-response.dto';
+import { JwtAuthGuard } from '../jwt/jwt-auth.guard';
 
 @Controller('carts')
+@UseGuards(JwtAuthGuard)
 export class CartController {
   constructor(private readonly cartService: CartService) {}
 

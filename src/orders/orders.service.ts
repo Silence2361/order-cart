@@ -1,7 +1,7 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
-import { CartRepository } from 'src/database/carts/carts.repository';
-import { IOrder } from 'src/database/orders/orders.interface';
-import { OrdersRepository } from 'src/database/orders/orders.repository';
+import { CartRepository } from '../database/carts/carts.repository';
+import { IOrder } from '../database/orders/orders.interface';
+import { OrdersRepository } from '../database/orders/orders.repository';
 
 @Injectable()
 export class OrdersService {

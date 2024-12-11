@@ -9,8 +9,8 @@ import {
   IFindUsersResponse,
   IUpdateUser,
   IUser,
-} from 'src/database/users/users.interface';
-import { UsersRepository } from 'src/database/users/users.repository';
+} from '../database/users/users.interface';
+import { UsersRepository } from '../database/users/users.repository';
 import * as bcrypt from 'bcryptjs';
 
 @Injectable()

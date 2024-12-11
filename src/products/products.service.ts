@@ -8,8 +8,8 @@ import {
   IProduct,
   IProductResponse,
   IUpdateProduct,
-} from 'src/database/products/products.interface';
-import { ProductsRepository } from 'src/database/products/products.repository';
+} from '../database/products/products.interface';
+import { ProductsRepository } from '../database/products/products.repository';
 
 @Injectable()
 export class ProductsService {
